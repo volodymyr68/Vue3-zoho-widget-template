@@ -1,7 +1,7 @@
 # Zoho Widget Development with Vue 3
 
 ## 🚀 Overview
-This project is a **Vue 3-based widget** designed for **Zoho Creator**. It allows seamless integration of Vue components into Zoho's platform, enhancing functionality and customization.
+This project is a **Vue 3-based widget** designed for **Zoho CRM/Creator/Peolple**. It allows seamless integration of Vue components into Zoho's platform, enhancing functionality and customization.
 
 ---
 
