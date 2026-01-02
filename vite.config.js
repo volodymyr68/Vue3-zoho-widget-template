@@ -1,30 +1,26 @@
 import { fileURLToPath, URL } from 'node:url'
-
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
-import { resolve } from 'path';
+import { resolve } from 'path'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
-    vueDevTools(),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: './', // Ensure relative paths for assets
+  base: './',
   build: {
-    outDir: resolve(__dirname, 'dist/widget/app'), // Keep output path
-    assetsDir: '', // Disable assets directory
+    outDir: resolve(__dirname, 'dist/widget/app'),
+    assetsDir: '',
     rollupOptions: {
       output: {
-        entryFileNames: 'index.js', // Rename the JS file
+        entryFileNames: 'index.js',
         chunkFileNames: '[name].js',
-        assetFileNames: '[name].[ext]', // Remove hash for assets
+        assetFileNames: '[name].[ext]',
       },
     },
   },
